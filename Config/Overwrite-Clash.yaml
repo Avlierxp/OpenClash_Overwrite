@@ -794,6 +794,14 @@ rules:
 
 
 rule-providers:
+  kaspersky:
+    behavior: classical
+    interval: 10800
+    path: ./rule_provider/kaspersky.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/Avlierxp/Custom_OpenClash_Rules/refs/heads/main/rule/kaspersky.yaml"
+    proxy: DIRECT
+    
   Custom_Port_Direct:
     behavior: classical
     interval: 10800
@@ -824,12 +832,4 @@ rule-providers:
     path: ./rule_provider/Steam_CDN_Classical.yaml
     type: http
     url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_Classical.yaml"
-    proxy: DIRECT
-  
-  kaspersky:
-    behavior: classical
-    interval: 10800
-    path: ./rule_provider/kaspersky.yaml
-    type: http
-    url: "https://raw.githubusercontent.com/Avlierxp/Custom_OpenClash_Rules/refs/heads/main/rule/kaspersky.yaml"
     proxy: DIRECT
