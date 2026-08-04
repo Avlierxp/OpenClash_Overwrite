@@ -9,7 +9,7 @@ anchor:
     proxy: DIRECT
     health-check:
       enable: true
-      url: "https://g.cn/generate_204"
+      url: "https://cp.cloudflare.com/generate_204"
       interval: 10
     override:
       skip-cert-verify: true
